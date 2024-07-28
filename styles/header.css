@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+    font-family: Montserrat, sans-serif; */
+    user-select: none;
+    overflow-x: hidden;     
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    margin-top: 20px;
+    width: 100%;
+    height: 90px;
+    /* background-color: red; */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+
+.navbar2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 90px;
+    /* background-color: red; */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+
+
+
+.hamburger-icon{
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.navbar ul {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navbar ul li a:hover {
+    color: rgb(220, 223, 223);
+}
+
+.navbar2 ul {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar2-list{
+    display: none;
+    width: 100%;
+    min-height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    /* background-color: red; */
+}
+
+.display-block{
+    display: block;
+}
+
+.navbar2-list ul{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.navbar2-list ul li a{
+    cursor: pointer;
+    font-size: 60px;
+
+}
+
+.close-icon{
+    font-size: 40px;
+}
+
+
+.hero-section {
+    width: 96%;
+    height: 95vh;
+    /* background-color: aqua; */
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/5527a395e02754bb57746389_slider1.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.hero-section .text {
+    width: 60%;
+    height: 200px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-section h1,
+h4 {
+    width: 80%;
+    /* background-color: red; */
+    text-align: end;
+    padding-right: 190px;
+    color: aliceblue;
+}
+
+.hero-section h1 {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    /* line-height: 1; */
+}
+
+.hero-section h4 {
+    font-size: 20px;
+    font-family: Vollkorn, serif;
+    font-style: italic;
+    /* background-color: red; */
+}
+
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.appear-block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear-right {
+
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+.appear-left {
+    animation: appear-right linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.navbar2 {
+    display: none;
+}
+

@@ -1,0 +1,101 @@
+
+.portfolio-section {
+    width: 96%;
+    min-height: 720px;
+    /* background-color: red; */
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.portfolio-section .grid-item {
+    cursor: pointer;
+    position: relative;
+}
+
+.portfolio-section .port-intro {
+    cursor: default;
+}
+
+.port-intro h1 {
+    font-size: 40px;
+    padding: 10px 0;
+    font-weight: 900;
+}
+
+.port-intro h5 {
+    font-size: 20px;
+    font-family: Vollkorn, serif;
+    font-style: italic;
+}
+
+.port-intro p {
+    margin-top: 30px;
+    color: rgb(137, 137, 139);
+}
+
+.portfolio-section .port {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio-section .grid-item:nth-child(2) {
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/552aa53c0108cf394df63840_port1-small.jpg);
+}
+
+.portfolio-section .grid-item:nth-child(3) {
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/552aa5cc0108cf394df63845_port2-small.jpg);
+}
+
+.portfolio-section .grid-item:nth-child(4) {
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/552aacfa416f90126f4e8596_port3-small.jpg);
+}
+
+
+.portfolio-section .grid-item:nth-child(5) {
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/552b90eaede1286e5f007d06_port4-small.jpg);
+}
+
+
+.portfolio-section .grid-item:nth-child(6) {
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/552b9102ede1286e5f007d0b_port5-small.jpg);
+}
+
+.portfolio-section .grid-item:nth-child(7) {
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/552b9118ede1286e5f007d0f_port6-small.jpg);
+}
+
+.portfolio-section .grid-item:nth-child(8) {
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/552b912a18c4f26f5f653ab3_port7-small.jpg);
+}
+
+.portfolio-section .grid-item .text-info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: 0.5s ease;
+
+}
+
+.portfolio-section .grid-item .text-info h1 {
+    border: 2px solid white;
+    padding: 125px 70px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.portfolio-section .port:hover .text-info {
+    opacity: 1;
+}
